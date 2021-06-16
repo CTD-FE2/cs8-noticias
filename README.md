@@ -1,7 +1,9 @@
 # Consigna
 
 Ver wireframe y recursos [acá](https://www.figma.com/file/4OQqIFoSMLRisjdBJY8F7w/CTD-FE2-CS8-Noticias?node-id=0%3A1)
+
 Ver consigna completa [acá](https://drive.google.com/file/d/1K56tZusVNJvEiaXMQ9VKvvVwNRDwwnup/view)
+
 ## Requerimiento 1
 
 El sitio debe estar previamente maquetado en un wireframe, pueden utilizar cualquier
