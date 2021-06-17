@@ -37,8 +37,37 @@ const noticias = [
     }
 ];
 
+function renderizarNoticia(noticia, nroNoticia) {
+    // TODO: agregar background-img
+    const template = `<article id="noticia${nroNoticia}">
+                        <div class="topNoticia">
+                            <h2>${noticia.titulo}</h2>
+                        </div>
+                        <div class="bottomNoticia">
+                            <p id="fechaNoticia1" class="fechaNoticia">
+                                ${noticia.fecha}
+                            </p>
+                            <p id="txtNoticia1" class="textoNoticia">
+                                ${noticia.descripcion}
+                            </p>
+                        </div>
+                    </article>
+                `;
+    document.querySelector("#noticias").innerHTML += template;
+}
+
+function agregarNoticias() {
+    noticias.forEach((noticia, i) => {
+        renderizarNoticia(noticia, i+1);
+    })
+}
+
+
 window.addEventListener("load", function () {
+
     document.querySelector("#cambiarTema").onclick = () => {
         document.querySelector("body").classList.toggle("dark");
     }
+
+    agregarNoticias();
 });
