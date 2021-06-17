@@ -37,6 +37,8 @@ const noticias = [
     }
 ];
 
-window.addEventListener("load", function() {
-    // TODO
+window.addEventListener("load", function () {
+    document.querySelector("#cambiarTema").onclick = () => {
+        document.querySelector("body").classList.toggle("dark");
+    }
 });
